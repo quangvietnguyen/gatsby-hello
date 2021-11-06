@@ -1,11 +1,10 @@
 import React from "react"
-import Nav from "../components/nav"
+import Layout from "../components/Layout"
 
 export default function about() {
   return (
-    <div>
-      <Nav />
+    <Layout>
       <h1>About Page</h1>
-    </div>
+    </Layout>
   )
 }
