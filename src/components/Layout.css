@@ -4,6 +4,10 @@ body {
   background-color: whitesmoke;
 }
 
-h1 {
+.about-heading {
+  color: green;
+}
+
+.home-heading {
   color: blue;
 }
