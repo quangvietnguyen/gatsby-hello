@@ -2,7 +2,8 @@ import React from "react"
 import Layout from "../components/Layout"
 import styled from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
+import RecipeList from "../components/RecipeList"
 
 export default function About() {
   return (
@@ -29,8 +30,10 @@ export default function About() {
             src="../assets/images/about.jpeg"
             alt="Person pouring salt into the bow"
             className="about-img"
-            placeholder="blurred"
           />
+        </section>
+        <section className="featured-recipes">
+          <RecipeList />
         </section>
       </main>
     </Layout>
