@@ -14,7 +14,9 @@ export default function TagsList({ recipes }) {
           const slug = slugify(text, { lower: true })
           return (
             <Link to={`/tags/${slug}`} key={index}>
-              {text} ({value})
+              <div className="tags-box">
+                {text} ({value})
+              </div>
             </Link>
           )
         })}

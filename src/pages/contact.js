@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import { Link, graphql } from "gatsby"
 import RecipeList from "../components/RecipeList"
+import SEO from "../components/SEO"
 
 export const query = graphql`
   {
@@ -29,6 +30,7 @@ export default function contact({
 }) {
   return (
     <Layout>
+      <SEO title="Contact" />
       <main className="page">
         <section className="contact-page">
           <article className="contact-info">

@@ -384,6 +384,12 @@ form > *:last-child {
   border-top: 1px solid var(--grey-500);
   transition: var(--transition);
 }
+
+.line :hover {
+  border: solid 4px #645cff;
+  width: fit-content;
+}
+
 .active-link {
   color: var(--primary-500);
 }
@@ -576,6 +582,11 @@ form > *:last-child {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+.tags-box {
+  border-bottom: solid 2px #645cff;
+  width: fit-content;
+}
+
 .tags-container h4 {
   margin-bottom: 0.5rem;
   font-weight: bold;

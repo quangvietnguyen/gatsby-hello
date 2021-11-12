@@ -1,9 +1,9 @@
 import React from "react"
 import Layout from "../components/Layout"
-import styled from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link, graphql } from "gatsby"
 import RecipeList from "../components/RecipeList"
+import SEO from "../components/SEO"
 
 export const query = graphql`
   {
@@ -31,6 +31,7 @@ export default function About({
 }) {
   return (
     <Layout>
+      <SEO title="About" />
       <main className="page">
         <section className="about-page">
           <article>
